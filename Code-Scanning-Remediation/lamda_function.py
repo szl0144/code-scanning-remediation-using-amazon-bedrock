@@ -55,13 +55,13 @@ def analyze_and_remediate_code(code_repo, non_code_exts):
         response = bedrock.invoke_model(
             body=json.dumps({
                 "prompt": prompt,
-                "max_tokens_to_sample": 1000,
+                "max_tokens_to_sample": 10000,
                 "temperature": 0.5,
                 "top_k": 50,
                 "top_p": 0.95,
                 "stop_sequences": ["\n\nHuman:"]
             }),
-            modelId="anthropic.claude-v2:1",
+            modelId="us.anthropic.claude-sonnet-4-20250514-v1:0",
             contentType="application/json",
             accept="*/*"
         )
@@ -84,7 +84,7 @@ Assistant:"""
         response = bedrock.invoke_model(
             body=json.dumps({
                 "prompt": prompt,
-                "max_tokens_to_sample": 2000,
+                "max_tokens_to_sample": 10000,
                 "temperature": 0.7,
                 "top_k": 50,
                 "top_p": 0.95,

@@ -1,0 +1,198 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# AWS credentials and config files
+.aws/
+*.pem
+*.p12
+*.key
+*-key.json
+credentials
+credentials.json
+
+# Streamlit specific
+streamlit-ui/venv/
+streamlit-ui/.streamlit/secrets.toml
+streamlit-ui/.streamlit/config.toml
+
+# CDK specific
+cdk-bedrock-agent/venv/
+cdk-bedrock-agent/cdk.out/
+cdk-bedrock-agent/node_modules/
+cdk-bedrock-agent/.cdk.staging/
+cdk-bedrock-agent/cdk.context.json
+cdk-bedrock-agent/lib/*.js
+cdk-bedrock-agent/lib/*.d.ts
+cdk-bedrock-agent/bin/*.js
+cdk-bedrock-agent/bin/*.d.ts
+
+# Lambda dependencies (these will be re-installed during deployment)
+cdk-bedrock-agent/lambda/boto3/
+cdk-bedrock-agent/lambda/botocore/
+cdk-bedrock-agent/lambda/requests/
+cdk-bedrock-agent/lambda/s3transfer/
+cdk-bedrock-agent/lambda/jmespath/
+cdk-bedrock-agent/lambda/dateutil/
+cdk-bedrock-agent/lambda/idna/
+cdk-bedrock-agent/lambda/charset_normalizer/
+cdk-bedrock-agent/lambda/certifi/
+cdk-bedrock-agent/lambda/urllib3/
+cdk-bedrock-agent/lambda/six/
+cdk-bedrock-agent/lambda/python_dateutil*/
+cdk-bedrock-agent/lambda/bin/
+cdk-bedrock-agent/lambda/__pycache__/
+cdk-bedrock-agent/lambda/*.dist-info/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# GitHub token and sensitive environment variables
+.github_token
+GITHUB_TOKEN
+.secrets
+*.secret
+
+# Local environment configuration
+.local_env
+local_config.py
+
+# Terraform (if used)
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+
+# CloudFormation templates (generated)
+*.template.json
+*.template.yaml 
