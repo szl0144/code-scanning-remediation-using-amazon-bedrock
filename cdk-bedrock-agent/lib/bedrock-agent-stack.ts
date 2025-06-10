@@ -159,7 +159,7 @@ export class BedrockAgentStack extends cdk.Stack {
               description: 'API for scanning and remediating code repositories'
             },
             paths: {
-              '/scan-and-remediate': {
+              '/scanAndRemediate': {
                 post: {
                   summary: 'Scan and remediate code repository',
                   description: 'Analyzes code repository for issues and creates a new branch with fixes',
