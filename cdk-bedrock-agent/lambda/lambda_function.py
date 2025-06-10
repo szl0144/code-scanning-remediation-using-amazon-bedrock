@@ -363,8 +363,14 @@ def lambda_handler(event, context):
         
         # Convert string inputs to lists if necessary
         if isinstance(non_code_exts, str):
+            # First remove leading/trailing brackets from the entire string
+            non_code_exts = non_code_exts.strip().strip('[]')
+            # Then split by comma and strip each element
             non_code_exts = [ext.strip() for ext in non_code_exts.split(',') if ext.strip()]
         if isinstance(exclude_folders, str):
+            # First remove leading/trailing brackets from the entire string
+            exclude_folders = exclude_folders.strip().strip('[]')
+            # Then split by comma and strip each element
             exclude_folders = [folder.strip() for folder in exclude_folders.split(',') if folder.strip()]
         
         logger.info(f"Processing repository: {repo_link}, branch: {branch}")

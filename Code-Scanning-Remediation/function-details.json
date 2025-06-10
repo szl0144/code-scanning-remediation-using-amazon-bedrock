@@ -11,13 +11,13 @@
       "name": "file_extensions_to_exclude",
       "description": "File extensions like needs to be excluded from scanning",
       "required": "True",
-      "type": "string"
+      "type": "array"
     },
     {
       "name": "folders_to_exclude",
       "description": "Folder names to exclude from scanning",
       "required": "True",
-      "type": "string"
+      "type": "array"
     },
     {
       "name": "new_remediated_branch_name",
